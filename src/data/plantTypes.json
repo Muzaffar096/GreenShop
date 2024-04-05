@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "House Plants",
+    "count": 33
+  },
+  {
+    "id": 2,
+    "type": "Potter Plants",
+    "count": 12
+  },
+  {
+    "id": 3,
+    "type": "Seeds",
+    "count": 65
+  },
+  {
+    "id": 4,
+    "type": "Small Plants",
+    "count": 39
+  },
+  {
+    "id": 5,
+    "type": "Big Plants",
+    "count": 23
+  },
+  {
+    "id": 6,
+    "type": "Succulents",
+    "count": 17
+  },
+  {
+    "id": 7,
+    "type": "Trerrariums",
+    "count": 19
+  },
+  {
+    "id": 8,
+    "type": "Gardening",
+    "count": 13
+  },
+  {
+    "id": 9,
+    "type": "Accessories",
+    "count": 18
+  },
+  {
+    "id": 10,
+    "type": "Small",
+    "count": 119
+  },
+  {
+    "id": 11,
+    "type": "Medium",
+    "count": 86
+  },
+  {
+    "id": 12,
+    "type": "Large",
+    "count": 78
+  }
+]
