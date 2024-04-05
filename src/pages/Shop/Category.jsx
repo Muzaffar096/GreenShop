@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCategory } from "../../redux/filterSlice";
 import Categories from "../../data/categories.json";
 
-export default function Category() {
+const Category = () => {
   const [category, setCategory] = useState("all");
   const dispatch = useDispatch();
 
@@ -44,7 +44,7 @@ export default function Category() {
           ))}
         </Select>
       </FormControl>
-      
     </div>
   );
-}
+};
+export default Category;

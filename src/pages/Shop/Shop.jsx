@@ -4,7 +4,7 @@ import ShopInfo from "./ShopInfo";
 import ShopItem from "./ShopItem";
 import ShopProduct from "./ShopProduct";
 
-export default function Shop() {
+const Shop = () => {
   return (
     <Container>
       <div className="mt-3">
@@ -14,4 +14,5 @@ export default function Shop() {
       <ShopProduct />
     </Container>
   );
-}
+};
+export default Shop;

@@ -61,7 +61,7 @@ const Tabs = [
     useFill: false,
   },
 ];
-export default function MyAccount({ selectedTab, setSelectedTab }) {
+const MyAccount = ({ selectedTab, setSelectedTab }) => {
   return (
     <div className="w-[310px] bg-softBackground rounded-lg py-[17px]">
       <h2 className="pl-6 mb-6 text-lg font-bold">My Account</h2>
@@ -107,4 +107,5 @@ export default function MyAccount({ selectedTab, setSelectedTab }) {
       </div>
     </div>
   );
-}
+};
+export default MyAccount;

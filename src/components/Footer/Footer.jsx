@@ -19,14 +19,14 @@ import Twitter from "../../../public/images/Twitter.svg?react";
 import Linkedin from "../../../public/images/Linkedin.svg?react";
 import Union from "../../../public/images/Union.svg?react";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <Container classes="flex bg-softBackground flex-col">
       <div className="p-7">
         <div className="grid md:grid-cols-1 lg:grid-cols-2 grid-cols-4 gap-7">
           <div className="flex flex-col px-3">
             <div className="h-[120px] flex items-end pb-3">
-            <img width={96} src={Plant} alt="plant" />
+              <img width={96} src={Plant} alt="plant" />
             </div>
             <h3 className="text-[18px] font-bold">Garden Care</h3>
             <p className="text-[14px] py-1 text-textSecondary">
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col px-3 border-x">
             <div className="h-[120px] flex items-end pb-3">
-            <img width={96} src={Cactus} alt="plant" />
+              <img width={96} src={Cactus} alt="plant" />
             </div>
             <h3 className="text-[18px] font-bold">Plant Renovation</h3>
             <p className="text-[14px] py-1 text-textSecondary">
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col px-3">
             <div className="h-[120px] flex items-end pb-3">
-            <img width={96} src={Teapot} alt="plant" />
+              <img width={96} src={Teapot} alt="plant" />
             </div>
             <h3 className="text-[18px] font-bold">Watering Garden</h3>
             <p className="text-[14px] py-1 text-textSecondary">
@@ -104,9 +104,7 @@ export default function Footer() {
       <Divider variant="fullWidth" />
       <div className="grid grid-cols-4  lg:grid-cols-2 px-7">
         <div className="flex flex-col gap-2 my-8">
-          <h3 className="text-textPrimary font-bold text-[20px]">
-            My Account
-          </h3>
+          <h3 className="text-textPrimary font-bold text-[20px]">My Account</h3>
           <ul className="list-none">
             <li className="text-[14px] py-1 hover:underline">
               <NavLink to="/my-account">My Account</NavLink>
@@ -148,9 +146,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-2 my-8">
-          <h3 className="text-textPrimary font-bold text-[20px]">
-            Categories
-          </h3>
+          <h3 className="text-textPrimary font-bold text-[20px]">Categories</h3>
           <ul className="list-none">
             <li className="text-[14px] py-1 hover:underline">
               <NavLink to="/my-account">House Plants</NavLink>
@@ -204,4 +200,6 @@ export default function Footer() {
       </p>
     </Container>
   );
-}
+};
+
+export default Footer;

@@ -3,9 +3,8 @@ import CartIcon from "../../public/images/add-to-shopping-cart.svg?react";
 import { addToCart, removeFromCart } from "../redux/cartProductsSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
 
-export default function AddCart({ product, state, className }) {
+const AddCart = ({ product, state, className }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [added, setAdded] = useState(state);
@@ -23,17 +22,14 @@ export default function AddCart({ product, state, className }) {
     setAdded(true);
   }
   return (
-    <button
-      onClick={handleAddClick}
-      className=""
-      
-    >
+    <button onClick={handleAddClick} className="">
       <CartIcon
         className={`w-[20px] ${
           added ? "text-[#46A358] fill-[#46A358]" : " fill-black"
         } ${className ? className : ""}`}
       />
-     
     </button>
   );
-}
+};
+
+export default AddCart;

@@ -11,7 +11,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 import integrateLocalWithRedux from "./integratingProductsWithRedux";
 
-export default function Header() {
+const Header = () => {
   const [modalSearch, setModalSearch] = useState(false);
   const location = useLocation();
 
@@ -46,19 +46,19 @@ export default function Header() {
     <div className="mt-[24px] md:fixed md:left-0 md:bottom-0 md:right-0 md:bg-slate-50 md:z-50 ">
       <Container>
         <div className="flex sm:justify-start md:gap-4 justify-between items-center">
-        <div className="cursor-pointer md:ml-4">
-          <NavLink to="/">
-            <Logo className=" md:hidden" />
-            <span className=" hidden md:block">
-              <HomeIcon color="disabled" fontSize="large" />
-            </span>
-          </NavLink>
-        </div>
-        <HeaderLinks location={location} />
-        <HeaderButtons
-          handleclick={handleclick}
-          setModalSearch={setModalSearch}
-        />
+          <div className="cursor-pointer md:ml-4">
+            <NavLink to="/">
+              <Logo className=" md:hidden" />
+              <span className=" hidden md:block">
+                <HomeIcon color="disabled" fontSize="large" />
+              </span>
+            </NavLink>
+          </div>
+          <HeaderLinks location={location} />
+          <HeaderButtons
+            handleclick={handleclick}
+            setModalSearch={setModalSearch}
+          />
         </div>
       </Container>
       <Container>
@@ -101,4 +101,6 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;

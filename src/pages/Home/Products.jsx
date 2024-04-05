@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function Products() {
+const Products = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const products = data.slice(38);
@@ -133,4 +133,5 @@ export default function Products() {
       </div>
     </Container>
   );
-}
+};
+export default Products;

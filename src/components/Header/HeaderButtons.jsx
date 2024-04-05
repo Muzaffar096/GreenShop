@@ -7,20 +7,17 @@ import LoginButton from "./LoginButtons";
 import ModalLogin from "../ModalLogin";
 import LikedProductsIcon from "./LikedProductsIcon";
 
-export default function HeaderButtons({
-   handleclick,
-   setModalSearch,
-}) {
-   const isModalSearchVisible = !setModalSearch;
+const HeaderButtons = ({ handleclick, setModalSearch }) => {
+  const isModalSearchVisible = !setModalSearch;
 
-   return (
-      <div className="flex gap-8 md:gap-4 md:justify-between md:mr-3 lg:gap-4 md:w-[80%] items-center">
-         <ModalSearch
-            className={isModalSearchVisible && "block cursor-pointer"}
-         />
-         <ColorBadge />
-         <LikedProductsIcon />
-         <ModalLogin />
-      </div>
-   );
-}
+  return (
+    <div className="flex gap-8 md:gap-4 md:justify-between md:mr-3 lg:gap-4 md:w-[80%] items-center">
+      <ModalSearch className={isModalSearchVisible && "block cursor-pointer"} />
+      <ColorBadge />
+      <LikedProductsIcon />
+      <ModalLogin />
+    </div>
+  );
+};
+
+export default HeaderButtons;

@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../../../redux/cartProductsSlice";
 import TableHead from "./TableHead";
 import { useState } from "react";
-import SummaryProducts from "./SummaryProducts";
+import SimilarProducts from "./SimilarProducts";
 
-export default function ProductCart() {
+const ProductCart = () => {
   const [checked, setChecked] = useState([true, false]);
 
   const dispatch = useDispatch();
@@ -45,7 +45,8 @@ export default function ProductCart() {
           <CartTotal />
         </div>
       </div>
-      <SummaryProducts />
+      <SimilarProducts />
     </Container>
   );
-}
+};
+export default ProductCart;

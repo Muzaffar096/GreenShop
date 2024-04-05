@@ -1,3 +1,4 @@
-export default function OrderConfirmation() {
-   return <div>OrderConfirmation</div>;
-}
+const OrderConfirmation = () => {
+  return <div>OrderConfirmation</div>;
+};
+export default OrderConfirmation;

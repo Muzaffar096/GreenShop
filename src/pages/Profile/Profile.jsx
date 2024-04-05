@@ -4,7 +4,7 @@ import MyAccount from "./MyAccount/MyAccount";
 import Personalnfo from "./Personalnfo/Personalnfo";
 import { useState } from "react";
 
-export default function Profile() {
+const Profile = () => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   let resultTab;
@@ -22,4 +22,5 @@ export default function Profile() {
       </div>
     </Container>
   );
-}
+};
+export default Profile;

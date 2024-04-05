@@ -13,10 +13,7 @@ import Wishlist from "./pages/Shop/Wishlist/Wishlist";
 import Profile from "./pages/Profile/Profile";
 import PlantCare from "./pages/PlantCare/PlantCare";
 
-
-
 function App() {
-
   return (
     <BrowserRouter>
       <Header />
@@ -28,9 +25,8 @@ function App() {
         <Route path="/shop/checkout" element={<ProductCheckout />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/plantCare" element={<PlantCare />} />
-        <Route path="/blogs" element={<Blogs />}>
-          <Route path="/blogs/:category" element={<Blogs />}></Route>
-        </Route>
+        <Route path="/blogs" element={<Blogs />} />
+
         <Route path="/shop/wishlist" element={<Wishlist />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>

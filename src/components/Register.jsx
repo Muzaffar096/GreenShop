@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { toggleLoginWindow } from "../redux/loginWindowSlice";
 import { useDispatch } from "react-redux";
 
-export default function Register({ setOpen }) {
+const Register = ({ setOpen }) => {
   const usernameRef = useRef();
 
   const emailRef = useRef();
@@ -167,4 +167,6 @@ export default function Register({ setOpen }) {
       </form>
     </div>
   );
-}
+};
+
+export default Register;

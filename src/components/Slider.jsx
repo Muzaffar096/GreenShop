@@ -8,7 +8,7 @@ function valuetext(value) {
   return `${value}`;
 }
 
-export default function RangeSlider() {
+const RangeSlider = () => {
   const priceStart = useSelector((state) => state.filterSlice.priceStart);
   const priceEnd = useSelector((state) => state.filterSlice.priceEnd);
 
@@ -61,4 +61,5 @@ export default function RangeSlider() {
       </div>
     </div>
   );
-}
+};
+export default RangeSlider;

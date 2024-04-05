@@ -15,7 +15,7 @@ import { addAllProductsToCart } from "../../../redux/cartProductsSlice";
 import LikeIcon from "../../../components/LikeIcon";
 import AddToCart from "../../../components/AddToCart";
 
-export default function Wishlist() {
+const Wishlist = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -143,4 +143,5 @@ export default function Wishlist() {
       </div>
     </Container>
   );
-}
+};
+export default Wishlist;

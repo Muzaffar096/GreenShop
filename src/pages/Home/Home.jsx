@@ -7,31 +7,32 @@ import Container from "../../components/Container";
 import Tabs from "./Tab";
 import Category from "./Category";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <Hero />
       <Container>
         <main className="flex">
-        <Category />
-        <Tabs />
+          <Category />
+          <Tabs />
         </main>
       </Container>
       <Container>
         <main className="grid grid-cols-2 lg:grid-cols-1 md:pt-28 pt-[136px] gap-[28px]">
-        <FindMore
-          image={FindMoreImagesOne}
-          textTitel="Summer cactus& succulents"
-          textSubtitel="We are an online plant shop offering a wide range of cheap and trendy plants"
-        />
-        <FindMore
-          image={FindMoreImagesSecond}
-          textTitel="Summer cactus& succulents"
-          textSubtitel="We are an online plant shop offering a wide range of cheap and trendy plants"
-        />
+          <FindMore
+            image={FindMoreImagesOne}
+            textTitel="Summer cactus& succulents"
+            textSubtitel="We are an online plant shop offering a wide range of cheap and trendy plants"
+          />
+          <FindMore
+            image={FindMoreImagesSecond}
+            textTitel="Summer cactus& succulents"
+            textSubtitel="We are an online plant shop offering a wide range of cheap and trendy plants"
+          />
         </main>
       </Container>
       <BlogPosts />
     </main>
   );
-}
+};
+export default Home;

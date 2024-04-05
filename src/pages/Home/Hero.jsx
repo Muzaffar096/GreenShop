@@ -10,7 +10,7 @@ import HeroImg from "../../../public/images/hero-image.png";
 import HeroImg2 from "../../../public/images/hero-image2.png";
 import Button from "/src/components/Button";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <Container classes={`mt-3 mb-10`}>
       <Swiper
@@ -213,4 +213,6 @@ export default function Hero() {
       </Swiper>
     </Container>
   );
-}
+};
+
+export default Hero;
