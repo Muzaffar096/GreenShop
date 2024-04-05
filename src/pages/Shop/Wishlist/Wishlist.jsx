@@ -73,7 +73,7 @@ const Wishlist = () => {
   return (
     <Container>
       <h2 className="text-[32px] text-center">Wishlist</h2>
-      <div className="grid grid-cols-4 justify-items-center gap-y-16 pt-10 pb-10">
+      <div className="grid grid-cols-4 md:grid-cols-2 justify-items-center gap-y-16 pt-10 pb-10">
         {likedProducts &&
           likedProducts.map((product) => {
             if (!product) {
