@@ -11,7 +11,7 @@ const HeaderButtons = ({ handleclick, setModalSearch }) => {
   const isModalSearchVisible = !setModalSearch;
 
   return (
-    <div className="flex gap-8 md:gap-4 md:justify-between md:mr-3 lg:gap-4 md:w-[80%] items-center">
+    <div className="flex gap-8 md:gap-4 md:justify-between sm:gap-2 md:mr-3 lg:gap-4 md:w-[80%] items-center">
       <ModalSearch className={isModalSearchVisible && "block cursor-pointer"} />
       <ColorBadge />
       <LikedProductsIcon />

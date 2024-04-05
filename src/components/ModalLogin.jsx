@@ -54,7 +54,7 @@ const TransitionsModal = () => {
             <div
               className={`flex max-h-[600px] h-full flex-col justify-around px-[100px] py-[50px]`}
             >
-              <div className="gap-5 flex flex-col w-full text-center text-xl font-medium">
+              <div className="gap-3 flex flex-col w-full text-center text-xl font-medium">
                 <div className="flex justify-center items-center gap-3">
                   <Button
                     sx={{

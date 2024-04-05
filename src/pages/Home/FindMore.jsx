@@ -5,12 +5,12 @@ import { Button } from "@mui/material";
 const FindMore = (props) => {
   const { image, textTitel, textSubtitel } = props;
   return (
-    <div className="flex bg-findBg mt-4 justify-between pl-[290px] pr-9 py-[32px] relative">
+    <div className="flex bg-findBg mt-4 justify-between sm:pl-[180px] pl-[260px] pr-9 py-[32px] relative">
       <img
         width={250}
         src={image}
         alt={textTitel}
-        className="absolute left-0 bottom-1"
+        className="absolute -left-6 bottom-1"
       />
       <div className="flex flex-col gap-5 items-end">
         <h1 className="text-right text-lg">{textTitel}</h1>

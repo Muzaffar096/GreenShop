@@ -95,7 +95,7 @@ const CardProducts = (props) => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between gap-12 py-10 cursor-pointer">
+      <div className="flex flex-wrap justify-between sm:justify-center gap-12 py-10 cursor-pointer">
         {result.map((product) => (
           <div
             key={product.id}

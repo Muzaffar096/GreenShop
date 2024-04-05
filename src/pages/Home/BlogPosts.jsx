@@ -13,7 +13,7 @@ const BlogPosts = () => {
         plants.
       </p>
 
-      <div className="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-10 mb-24">
+      <div className="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 md:ml-2 sm:ml-4 gap-10 mb-24">
         {data.map((product) => (
           <BlogPostCard key={product.id} product={product} />
         ))}
